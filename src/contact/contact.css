@@ -1,0 +1,149 @@
+/* contact.css */
+
+:root {
+  --primary-color: #0077ff;
+  --background-color: #f5f7fa;
+  --form-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --text-color: #333;
+  --label-color: #444;
+  --placeholder-color: #888;
+  --required-color: #e53935;
+  --button-bg: #0077ff;
+  --button-text: #ffffff;
+  --button-hover: #005ecc;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.contact-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--form-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+/* Header */
+.header-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Form container */
+.form-container {
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Field container */
+.field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  font-weight: 600;
+  color: var(--label-color);
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.required-text {
+  color: var(--required-color);
+  font-size: 0.85rem;
+  margin-left: 4px;
+}
+
+/* Inputs */
+.form-input,
+.form-select,
+.form-textarea {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--placeholder-color);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Dropdown wrapper (optional visual style) */
+.select-wrapper {
+  position: relative;
+}
+
+/* Textarea */
+.form-textarea {
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 14px 24px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.submit-btn:hover {
+  background-color: var(--button-hover);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .contact-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

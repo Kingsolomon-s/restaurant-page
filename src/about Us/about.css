@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Honk&family=Lugrasimo&display=swap");
+
+.about-container > h1 {
+  font-family: "Lugrasimo";
+  text-align: center;
+}
+
+.para-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  gap: 20px;
+}
+
+.para-container > p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.about-image {
+  background-image: linear-gradient(#daa);
+  border-radius: 6px;
+}
+.about-image.one {
+  background-image: url("./about-images/about2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-image.two {
+  background-image: url("./about-images/about4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-extras-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  column-gap: 20px;
+  row-gap: 35px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.image-extras {
+  background-color: rgb(78, 48, 48);
+  height: 250px;
+  border-radius: 6px;
+}
+.image-extras.three {
+  background-image: url("./about-images/about3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-extras.four {
+  background-image: url("./about-images/about5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-extras,
+five {
+  background-image: url("./about-images/about6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-extras.six {
+  background-image: url("./about-images/about7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-container > p:last-child {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  margin: 70px 0 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .para-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.3fr;
+  }
+  .about-image:last-of-type {
+    grid-row: 2;
+  }
+}

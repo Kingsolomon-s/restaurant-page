@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Honk&family=Lugrasimo&display=swap");
+
+h2 {
+  text-align: center;
+  font-family: "Lugrasimo";
+}
+.special {
+  background-image: linear-gradient(to bottom, #d8d8d8, #dfdedf);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  height: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  gap: 15px;
+}
+.special:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(0, 0, 0, 0.04);
+}
+.special .name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 10px;
+  font-size: 1.4rem;
+}
+.name-container > p {
+  font-style: italic;
+}
+.image-container.menu-image {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-image: linear-gradient(180deg, #000000, #a10008);
+  border-radius: 12px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-items: center;
+}
+.price-container button {
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.price-container button:focus,
+.price-container button:hover {
+  background-color: #000;
+  font-size: 2rem;
+}
+
+.menu-container {
+  padding-bottom: 50px;
+  margin-top: 80px;
+}
+
+.menu-container > p {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Lugrasimo";
+  font-size: 3rem;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  column-gap: 50px;
+}
+
+.radius {
+  border-radius: 30px;
+}
+
+.image-container.menu-image.yam {
+  background-image: url("./menu-images/yam-pottage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.amala {
+  background-image: url("./menu-images/amala.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.pounded-yam {
+  background-image: url("./menu-images/poundo-yam.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.jollof {
+  background-image: url("./menu-images/jollof.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.beans {
+  background-image: url("./menu-images/beans.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.ofada {
+  background-image: url("./menu-images/ofada.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.asun {
+  background-image: url("./menu-images/asun.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.obe {
+  background-image: url("./menu-images/obe.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.eba {
+  background-image: url("./menu-images/eba.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.ogi {
+  background-image: url("./menu-images/ogi.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-container.menu-image.peppered-chicken {
+  background-image: url("./menu-images/pepper-chicken.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
