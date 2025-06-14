@@ -13,8 +13,6 @@ function createFirstDiv() {
 
   const firstDiv = createDiv("first-div");
 
-  const fiveDiv = createDiv("five-div");
-
   const experience = createDiv("experience");
 
   const experiencePara = createParagraph();
